@@ -1,0 +1,28 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<div class="container-fluid">
+
+<div class="card text-center border-rounded text-white"  style=" width:40%;height: 400px; ">
+<div class="card-body">
+<div class="card-title text-center text-muted">
+<h1 class="text-center text-muted fw-bold " style="font-style:cursive ;"> Login    
+
+                </h1>
+               <i id="graduation" class="fas fa-graduation-cap display-6">        </i>  
+<form class="ngForm m-4">
+<label for="email" class="text-start fw-bold "> Email</label><i id="envelope" class="fas fa-envelope"></i>
+
+
+
+<input #email id="email" name="email" type="email"  class="shadow-lg"  placeholder="enter your email"             >        
+<label id="password" class="text-start fw-bold "> Password   </label>
+<i id="key" class="fa fa-key" aria-hidden="true"></i>
+
+<input  #password id="password" class="shadow-lg" name="password" type="password" placeholder="enter your password"    >
+<button  [routerLink]="['/list']" class=" shadow-lg" style="background-color:rgb(175, 224, 233) "  (click)="create(email.value,password.value)"> login</button>
+</form>
+
+</div>
+</div>
+</div>
+</div>
